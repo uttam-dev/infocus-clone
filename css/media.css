@@ -1,0 +1,241 @@
+/* 
+
+min-width: 640px
+min-width: 768px
+min-width: 1024px
+min-width: 1200px 
+
+*/
+/* laptop / i pad */
+@media only screen and (max-width:1200px) and (min-width:1024px) {
+
+    .page-2 .about-title {
+        width: 50%;
+    }
+
+    .page-2 .about-para {
+        width: 50%
+    }
+}
+
+
+/* i pad /  mobile */
+@media only screen and (max-width:1024px) and (min-width:768px) {
+
+    .nav .logo img {
+        width: 20%;
+
+    }
+
+    .page-2 .text-content {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .page-2 .about-title {
+        width: 100%;
+        row-gap: 10px;
+    }
+
+    .page-2 .about-para {
+        width: 100%
+    }
+
+    .page-2 .about-title .box h3 {
+        width: 40%;
+    }
+
+    .page-2 .about-title .box h3:nth-child(1) {
+        text-align: end;
+    }
+
+    .page-2 .about-title .box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .page-2 .about-para p {
+        text-align: justify;
+    }
+
+    .page-2 .about-para p:nth-child(2) {
+        margin-top: 3%;
+    }
+
+    .credits .credit-label {
+        font-size: 1.1rem;
+    }
+
+    .credits .credit-text {
+        font-size: 1rem;
+        display: flex;
+
+    }
+
+}
+
+/* mobiles 768px  */
+@media only screen and (max-width:768px) and (min-width:640px) {
+
+
+    .nav .logo img {
+        width: 23%;
+
+    }
+
+    .page-3 .gellery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .page-3 .gellery .text-area h2 {
+        font-size: 1.1rem;
+    }
+
+    .page-3 .gellery .text-area h5 {
+        font-size: .9rem;
+    }
+
+    .gellery section:nth-child(2),
+    .gellery section:nth-child(5),
+    .gellery section:nth-child(8) {
+        margin-top: 0;
+    }
+
+    .gellery section.img-area:nth-child(9) {
+        width: 50%;
+        margin: auto;
+    }
+
+    .gellery section:nth-child(9) {
+        grid-column: span 2;
+        background: var(--black);
+        text-align: center;
+    }
+
+}
+
+/* all small mobile display */
+
+@media only screen and (max-width:640px) {
+
+    .nav {
+        backdrop-filter: blur(2px);
+        background: #d2d2d20a;
+        top: 0;
+        padding-block: 4%;
+    }
+
+    .menu a {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: .8rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .nav .logo img {
+        width: 35%;
+    }
+
+    .main-content {
+        height: 100vh;
+        background-position: right;
+    }
+
+    .main-content::after {
+        background: #24242496;
+    }
+
+
+    .page-2 .text-content {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .page-2 .about-title {
+        width: 100%;
+        row-gap: 10px;
+    }
+
+    .page-2 .about-para {
+        width: 100%;
+    }
+
+    .page-2 .about-title .box h3 {
+        width: 40%;
+    }
+
+    .page-2 .about-title .box h3:nth-child(1) {
+        text-align: end;
+    }
+
+    .page-2 .about-title .box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .page-2 .about-para p {
+        text-align: justify;
+    }
+
+    .page-2 .about-para p:nth-child(2) {
+        margin-top: 3%;
+    }
+
+    /* video section */
+    .video-content .box {
+        height: 60vh;
+    }
+
+    .video-content .box:nth-child(2) {
+        margin-top: 10%;
+    }
+
+    .credits .credit-iteam {
+        flex-direction: column;
+    }
+
+    .credits .credit-iteam .credit-label,
+    .credits .credit-iteam .credit-text {
+        width: 100%;
+    }
+
+    .credits .credit-label {
+        font-size: .9rem;
+    }
+
+
+    .credits .credit-text {
+        margin-top: 2%;
+        font-size: .7rem;
+    }
+
+
+    .credits .credit-text a::after {
+        height: .9px;
+    }
+
+    .page-3 {
+        height: 260vh;
+    }
+
+    .page-3 .gellery {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5%;
+    }
+
+    .gellery section {
+        background: var(--black);
+    }
+
+    .gellery section:nth-child(2),
+    .gellery section:nth-child(5),
+    .gellery section:nth-child(8) {
+        margin-top: 0;
+    }
+
+}

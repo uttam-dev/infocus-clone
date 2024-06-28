@@ -1,0 +1,156 @@
+/* fonts  */
+
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Libre+Baskerville&family=Neonderthaw&family=Raleway:wght@600&family=Roboto:ital,wght@1,500&display=swap');
+
+/* 
+font-family: 'Gabarito', cursive;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Neonderthaw', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+/* boiler code */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+:root {
+    --fad-white-color: #9e9e9e;
+    --black: #1A1A1A;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    background: var(--black);
+}
+
+
+/* main content */
+
+.nav {
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    top: 10%;
+    padding-inline: 5%;
+    z-index: 10000;
+
+}
+
+.logo {
+    width: 50%;
+}
+
+.logo img {
+    width: 15%;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.menu {
+    display: flex;
+    width: 50%;
+    justify-content: end;
+    align-items: center;
+}
+
+.menu a {
+    font-size: 1.2rem;
+    font-family: 'Gabarito', cursive;
+    margin-inline: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* main content */
+.main{
+    position: relative;
+}
+.page-1 {
+
+    width: 100vw;
+    height: 100vh;
+    margin-top: 0;
+    overflow: hidden;
+
+}
+
+.page-1 .container  {
+    width: 100%;
+    height: 100%;
+background: #000;
+}
+
+/* floating circle */
+.floating-cirlce {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    background: var(--black);
+    transition: all .1s;
+    transform: scale(0);
+}
+
+.floating-cirlce .inner-text {
+    display: none;
+    transform: scale(0);
+    transition: all .5s linear;
+}
+
+.floating-cirlce .inner-text h1 {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+
+.full-video video {
+    width: 100vw;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+
+
+}
+
+/* page-2 */
+.page-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: #ff0b0b;
+    opacity: 0;
+
+}
+
+.line-vr {
+    position: absolute;
+    height: 50%;
+    width: 1px;
+    left: 10%;
+    bottom: 0%;
+    background: #da2e2eb0;
+    display: flex;
+    justify-content: center;
+}
+
+.line-vr::before {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 2px;
+    border-radius: 10px;
+    background: #ffffff;
+}

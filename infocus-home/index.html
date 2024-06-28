@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+
+    <!-- locomotive css cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <!-- font awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- locol css code -->
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+
+
+    <div class="nav flex">
+        <div class="logo">
+            <img src="/assets/logoo.png" alt="logo">
+        </div>
+        <div class="menu flex">
+            <a href="#">PROJECT</a>
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>
+    </div>
+
+
+
+    <div class="main" data-scroll-container>
+        <div class="page-1" dsta-scroll-section>
+            <div class="floating-cirlce">
+                <div class="inner-text">
+                    <h1>TAP</h1>
+                </div>
+            </div>
+            <div class="container">
+                <div class="full-video">
+                    <video src="./media/b2b95f0a-8996-46f2-9450-42720cc3354a.mp4" autoplay muted loop></video>
+                </div>
+            </div>
+            <div class="line-vr"></div>
+        </div>
+        <div class="page-2"></div>
+    </div>
+
+
+    <!-- locomotive scroll js -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+    <!-- gsap cdn file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- gsap scroll trigger cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script on src="./javascript/home.js"></script>
+
+    <!-- <script>
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true
+        });
+    </script> -->
+</body>
+
+</html>

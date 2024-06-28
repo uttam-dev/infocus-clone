@@ -1,0 +1,345 @@
+/* fonts  */
+
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Libre+Baskerville&family=Neonderthaw&family=Raleway:wght@600&family=Roboto:ital,wght@1,500&display=swap');
+
+/* 
+font-family: 'Gabarito', cursive;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Neonderthaw', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+/* boiler code */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+html::-webkit-scrollbar {
+    scroll-behavior: smooth;
+    scroll-padding: 50%;
+}
+
+:root {
+    --fad-white-color: #9e9e9e;
+    --black: #1A1A1A;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    background: var(--black);
+}
+
+/* css reset classes  */
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1rem;
+}
+
+h4{
+    font-size: .8rem;
+}
+h5{
+    font-size: .6rem;
+}
+h6{
+    font-size: .4rem;
+}
+
+p{
+    font-size: 1rem;
+}
+/* css utility classes */
+.flex {
+    display: flex;
+}
+
+
+/* main content */
+
+
+.nav {
+    width: 100vw;
+    position: fixed;
+    top: 10%;
+    padding-inline: 5%;
+    z-index: 10000;
+}
+
+.logo {
+    width: 50%;
+}
+
+.logo img {
+    width: 15%;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.menu {
+    display: flex;
+    width: 50%;
+    justify-content: end;
+    align-items: center;
+}
+
+.menu a {
+    font-size: 1.2rem;
+    font-family: 'Gabarito', cursive;
+    margin-inline: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* page-1  */
+.main-content {
+    width: 100vw;
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    background-image: url('/assets/asset\ 10.jpeg');
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    position: relative;
+}
+
+.main-content::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #2424246b;
+}
+
+.main-content h1 {
+    z-index: 5;
+    font-family: 'Gabarito', cursive;
+    font-weight: 600;
+    margin-left: 20%;
+}
+
+.main-content p {
+    z-index: 5;
+    margin-left: 20%;
+    margin-top: 1.5%;
+}
+
+.page-2 {
+    font-family: 'Gabarito', cursive;
+    background-color: var(--black);
+    padding-top: 10%;
+}
+
+/* text content */
+.page-2 .text-content {
+    display: flex;
+    padding-inline: 15%;
+    min-height: 150px;
+}
+
+.page-2 .about-title {
+    width: 40%;
+    display: flex;
+    font-weight: 100;
+    flex-direction: column;
+    gap: 10%;
+
+
+}
+
+.page-2 .about-title .box {
+    display: flex;
+}
+
+.page-2 .about-title .box h3:nth-child(1) {
+    color: var(--fad-white-color);
+}
+
+.page-2 .about-title .box h3 {
+    width: 50%;
+}
+
+.page-2 .about-para {
+    width: 60%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+}
+
+.page-2 .about-para p:nth-child(1) {
+    line-height: 2rem;
+}
+
+.page-2 .about-para p:nth-child(2) {
+    margin-block: 10%;
+}
+
+/* video content */
+
+.video-content .box {
+    width: 100vw;
+    height: 100vh;
+}
+
+.video-content .box:nth-child(2) {
+    margin-top: 7%;
+}
+
+.video-content .box iframe{
+    width: 100%;
+    height: 100%;
+}
+/* credit list  */
+
+.page-2 .credits {
+    margin: auto;
+    margin-top: 10%;
+    padding-inline: 10%;
+}
+
+.credits .credit-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-top: 5%;
+    row-gap: 30px;
+}
+
+.credits .credit-iteam {
+    display: flex;
+    width: 100%;
+
+}
+
+.credits .credit-iteam .credit-label,
+.credits .credit-iteam .credit-text {
+    width: 50%;
+}
+
+.credits .credit-label {
+    color: var(--fad-white-color);
+    font-size: 1.4rem;
+    font-family: 'Gabarito', cursive;
+    font-weight: 600;
+}
+
+.credits .credit-text {
+    font-size: 1.2rem;
+}
+
+/* anchor hover  effect */
+.credits .credit-text a {
+    text-decoration: none;
+    position: relative;
+}
+
+.credits .credit-text a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1.9px;
+    background: #fff;
+    right: 0;
+    bottom: -3px;
+    transition: all .6s;
+}
+
+.credits .credit-text a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1.9px;
+    background: #fff;
+    left: 0;
+    bottom: -3px;
+    transition: all .6s;
+    transition-delay: .6s;
+
+}
+
+.credits .credit-text a:hover::after {
+    width: 0;
+}
+
+.credits .credit-text a:hover::before {
+    width: 100%;
+}
+
+/* gellery */
+.page-3 {
+
+    margin-top: -1px;
+    background: var(--black);
+    padding-top: 20%;
+    padding-bottom: 20%;
+
+}
+
+.page-3 .gellery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5%;
+    row-gap: 10%;
+
+}
+
+.gellery section {
+    position: relative;
+}
+/* image */
+.gellery section .img-area {
+    width: 100%;
+}
+.gellery section:hover{
+    z-index: 100000000;
+}
+.img-area img {
+    width: 100%;
+}
+
+.gellery section:nth-child(2),
+.gellery section:nth-child(5),
+.gellery section:nth-child(8) {
+    margin-top: 15%;
+}
+
+
+/* text */
+
+.gellery section .text-area {
+    transition: all .5s 
+}
+.gellery section:hover .text-area{
+    opacity: 0;
+}
+
+.gellery .text-area h2{
+    font-family: 'Trebuchet MS';
+    margin-top: 5px;
+    font-size: 1.5rem;
+}
+.gellery .text-area h5{
+    color: var(--fad-white-color);
+    margin-top: 10px;
+    font-size: 1rem;
+    font-family: 'Trebuchet MS';
+}
